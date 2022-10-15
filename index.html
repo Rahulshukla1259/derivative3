@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+    <script>
+    MathJax = {
+loader: {load: ['input/asciimath', 'output/chtml']}
+} 
+  
+</script>
+
+
+</head>
+
+<h1 id="name">DERIVATIVE CALCULATOR</h1>
+
+<body>
+  <div class="inputs">
+  <div class="row1">
+    <label for="expression" style="color: rgb(13, 235, 187); margin-left: 30vw;">Enter the function </label><input type="text" class="dfunction" spellcheck="false" style="border:none;" >
+  </div>
+  <div class="row2">
+    <label for="variable" style="color: rgb(13, 235, 187); margin-left: 30vw;">Enter the variable </label><input type="text" class="dvariable">
+  </div>
+  <div class="ins">
+  <li>donot write dot(.) in between the expression.</li>
+  <li> write sin(x) in place of sinx  and cos(x) in place of  cosx   and so-on. </li>
+  <li>write (cos(x))^2  in place of cos^2(x)  and so-on</li>
+  <li>inverse finction not supported.</li>
+  <li>write log(x)  in place of lnx. </li>
+</div>
+
+    <button class="calculate1" style="color:rgb(61, 3, 3) ;"> Calculate</button>
+</div>
+
+
+
+    <div class="result"></div>
+    <script src="bundle.js"></script>
+    
+</body>
+</html>
